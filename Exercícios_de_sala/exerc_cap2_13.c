@@ -10,6 +10,7 @@ printf("Insira a nota da P1:\n");
 scanf("%f", &p1);
 printf("Insira a nota da P2:\n");
 scanf("%f", &p2);
+  media = (p1 + p2)/2;
 
   if (media < 3){  
   media = (p1 + p2)/2;
