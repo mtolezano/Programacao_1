@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main () 
 { 
-*/Variáveis: a, b, c, d
-Início: Ler as respectivas variáveis
+/*Variáveis: a, b, c, d;
+	Início: Ler as respectivas variáveis
 Se a == b + c + d && d == b + c && b == c
 Escreva: Está equilibrado.
 Se não
