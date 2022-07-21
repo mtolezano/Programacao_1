@@ -5,7 +5,7 @@ int main () {
 	   for (lin = 0; lin < 10; lin++) { 
 	     for (col = 0; col < 10; col++) { 
 	        mat[lin][col] = rand()%1000;
-	        printf("%d ", mat[lin][col]);
+	        printf("%3d ", mat[lin][col]);
 	      }
 	   printf("\n");   
 	    }
