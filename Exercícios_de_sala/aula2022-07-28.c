@@ -75,7 +75,112 @@ int main () {
     scanf("%d", &num);
     printf("Seu fatorial é: %d\n", fatorial(num));
 }
+//exercício 5:
+#include <stdio.h> 
+#include <stdlib.h>
+#include <math.h>
 
+typedef struct { 
+    float peso, altura;
+} tipoIMC;
+
+float calc_imc (tipoIMC *imc)
+{
+    float resultado;
+    resultado = imc -> peso / pow (imc -> altura, 2);
+    return resultado;
+}
+
+int main ()
+{ 
+       tipoIMC *imc;
+       float r;
+    
+       imc = malloc (sizeof(tipoIMC));
+       //scanf("%f", &imc -> peso);
+       //printf("%f\n", imc -> peso);
+       printf("Insira o peso.:");
+       scanf("%f", &imc -> peso);
+    
+       printf("Insira sua altura.:");
+       scanf("%f", &imc -> altura);
+    
+       //printf("Seu peso é.: %.2f\nSua altura é.: %.2f\n", imc -> peso, imc -> altura);
+       
+       r = calc_imc (imc);
+       printf("Seu Imc é: %f\n", r);
+       
+        
+        
+}
+//exercício 6:
+#include <stdio.h> 
+#include <stdlib.h>
+#include <math.h>
+
+typedef struct { 
+    float peso, altura;
+} tipoIMC;
+
+float calc_imc (tipoIMC *imc)
+{
+    float resultado;
+    resultado = imc -> peso / pow (imc -> altura, 2);
+    return resultado;
+}
+
+int main ()
+{ 
+       tipoIMC *imc;
+       float r;
+    
+       imc = malloc (sizeof(tipoIMC));
+       //scanf("%f", &imc -> peso);
+       //printf("%f\n", imc -> peso);
+       printf("Insira o peso.:");
+       scanf("%f", &imc -> peso);
+    
+       printf("Insira sua altura.:");
+       scanf("%f", &imc -> altura);
+    
+       //printf("Seu peso é.: %.2f\nSua altura é.: %.2f\n", imc -> peso, imc -> altura);
+       
+       r = calc_imc (imc);
+       printf("Seu Imc é: %.2f\n", r);
+       printf("%.2f\n", calc_imc(imc));
+       
+        
+        
+}
+//exercício 7:
+#include <stdio.h> 
+#include <stdlib.h>
+#include <math.h>
+   float soma (float *v, int tam) { 
+   int i;
+   float r = 0;
+   for ( i=0; i < tam; i++)
+       r = r + v[i];
+       return r;
+       } 
+int main () 
+{
+    float *vet;
+    int i, t;
+    printf("Escolha o tamanho do vetor:\n");
+    scanf("%d", &t);
+    vet = malloc (t*sizeof(float));
+    for (i=0; i < t; i++) 
+       vet[i] = i*i+3;
+    printf("%.2f\n", soma(vet,t));
+    printf("Escolha o tamanho do vetor:\n");
+    scanf("%d", &t);
+    vet = malloc (t*sizeof(float));
+    for (i=0; i < t; i++)
+        vet [i] = i*i;
+        printf("%.2f\n", soma(vet,t));
+    
+}                   
 
     
     
