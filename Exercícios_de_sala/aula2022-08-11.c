@@ -1,3 +1,4 @@
+//exercício 1:
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -9,4 +10,6 @@
 int main ()
 { 
     esc_num(10);
-}                      
+}
+
+//exercício 2:
